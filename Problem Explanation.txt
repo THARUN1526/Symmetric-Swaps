@@ -1,0 +1,12 @@
+The problem involves two arrays, A and B, each containing N elements. In each operation, Chef can choose an index i (1 ≤ i ≤ N) and swap the elements Ai and Bi of the arrays.
+
+The goal is to minimize the value of (max(A) - min(A)), which represents the difference between the maximum and minimum elements in array A after performing any number of swap operations.
+
+To achieve this, Chef needs to strategically choose which elements to swap in order to minimize the difference. Swapping elements can potentially decrease the maximum value and increase the minimum value, thereby reducing the difference between them.
+
+The task is to find the minimum possible value of (max(A) - min(A)) after performing the swap operations.
+
+The input consists of the number of test cases, T, followed by T test cases. Each test case includes the size of the arrays, N, and the elements of arrays A and B. The output should provide the minimum possible value of (max(A) - min(A)) for each test case.
+
+The solution involves analyzing the elements of the arrays and determining the optimal swapping strategy. By performing the swaps in a specific manner, the difference between the maximum and minimum elements can be minimized.
+
