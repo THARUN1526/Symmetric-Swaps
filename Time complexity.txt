@@ -1,0 +1,15 @@
+The time complexity of the algorithm can be analyzed as follows:
+
+1. Reading the input takes O(T) time, where T is the number of test cases.
+2. For each test case:
+   a. Reading the array elements takes O(N) time, where N is the size of the arrays.
+   b. Checking and swapping elements in arr1 and arr2 takes O(N) time.
+   c. Creating the 2D array arr takes O(N) time.
+   d. Sorting the 2D array arr takes O(N log N) time.
+   e. Calculating the minimum and maximum values for arr1 and arr2 using dynamic programming takes O(N) time.
+   f. Iterating over the elements of arr1 and updating the minimum difference takes O(N) time.
+   g. Printing the final result takes O(1) time.
+
+Since all the steps are performed sequentially, the overall time complexity is dominated by the sorting step, which is O(N log N). Therefore, the time complexity of the algorithm is O(T * N log N), where T is the number of test cases and N is the size of the arrays.
+
+It's important to note that the actual time complexity may vary depending on the implementation of the sorting algorithm used. The complexity mentioned here assumes an efficient sorting algorithm like quicksort or mergesort.
