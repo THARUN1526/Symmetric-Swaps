@@ -1,0 +1,20 @@
+step-by-step explanation of the algorithm:
+
+1. Read the number of test cases, T.
+2. Iterate T times:
+   a. Read the size of the arrays, N.
+   b. Read the elements of arr1 and arr2.
+   c. Check each element of arr1 and arr2, and if the element in arr1 is smaller than the corresponding element in arr2, swap them.
+   d. Create a 2D array, arr, where each row represents a pair of corresponding elements from arr1 and arr2.
+   e. Sort the 2D array arr based on the values in the first column (arr1 values).
+   f. Initialize four arrays, arr1Min, arr1Max, arr2Min, and arr2Max, each of size N, to store minimum and maximum values.
+   g. Calculate the minimum and maximum values for arr1 from left to right and for arr2 from right to left using dynamic programming. These values are stored in the respective arrays arr1Min, arr1Max, arr2Min, and arr2Max.
+   h. Initialize the variable ans to store the current minimum difference (max(A) - min(A)), initially set to the difference between the first and last elements in arr1.
+   i. Iterate over the elements of arr1 from right to left:
+      - Calculate the maximum and minimum values by comparing the current element of arr1 with the corresponding elements in arr2 and the previous elements in arr1. Store these values in the variables maximum and minimum.
+      - Update ans to be the minimum of ans and the difference between maximum and minimum.
+   j. Print the final value of ans, which represents the minimum possible difference (max(A) - min(A)).
+
+The algorithm utilizes the fact that swapping elements in arr1 and arr2 does not change the difference (max(A) - min(A)) but only affects the individual maximum and minimum values. Therefore, the algorithm first sorts the arrays and then calculates the maximum and minimum values based on the sorted order. It considers different possible swap combinations to find the minimum difference.
+
+Overall, the algorithm has a time complexity of O(N) as it involves iterating over the elements of the arrays and performing calculations using dynamic programming techniques.
